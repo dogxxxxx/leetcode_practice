@@ -1,10 +1,11 @@
-```
+"""
 Method 1:
 If the car runs out of the gas, store how much gas it needs to get to the next station in rest list.
 Then, do the same thing from the next station till the end of the station list.
 
 Time complexity: O(N)
 Space complexity: O(N)
+"""
 
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
@@ -22,12 +23,14 @@ class Solution:
             return ind + 1
         return -1
 
+"""
 Method 2:
 Find the index of the only possible starting point.
 Then loop over the list to see if there is a possible route.
 
 Time complexity: O(N)
 Space complexity: O(1)
+"""
 
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
@@ -45,4 +48,3 @@ class Solution:
             if tmp < 0:
                 return -1
         return ind
-```

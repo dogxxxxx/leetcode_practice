@@ -1,4 +1,4 @@
-```
+"""
 Method 1:
 Create a list to store intervals that is smaller than new interval.
 When intervals begin to overlap with new interval, change the start and end points of the new interval.
@@ -8,7 +8,7 @@ After overlapping, return the list + new interval + remaining intervals.
 
 Time complexity: O(N)
 Space complexity: O(N)
-
+"""
 
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
@@ -26,4 +26,3 @@ class Solution:
                 
         result.append([s, e])
         return result
-```

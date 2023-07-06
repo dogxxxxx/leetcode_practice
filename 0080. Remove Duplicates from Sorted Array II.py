@@ -1,4 +1,4 @@
-```
+"""
 Method 1:
 Keep how many times a number is duplicated. If larger than 2, remove it from the list.
 This causes changes of length of the list.
@@ -7,7 +7,7 @@ It's quite stupid! There must be other methods to keep less things but too tired
 
 Time complexity: O(N)
 Space complexity: O(1)
-
+"""
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
@@ -24,4 +24,3 @@ class Solution:
                 tmp = nums[i - pop_times]
                 duplicates = 1
         return len(nums)
-```

@@ -1,4 +1,4 @@
-```
+"""
 Method 1:
 Get the length of longest substring by finding substrings using each of
 the element in s as the beginning of a substring. Then, keep the bigger length
@@ -6,6 +6,7 @@ between originally kept length and new length.
 
 Time complexity: O(N^2)
 Space complexity: O(N)
+"""
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
@@ -22,13 +23,13 @@ class Solution:
                 result = substring_length(i)
         return result
 
-
+"""
 Method 2:
 Use two pointer.
 
 Time complexity:
 Space complexity:
-
+"""
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
@@ -48,4 +49,3 @@ class Solution:
                 result = current_length
                 
         return result
-```

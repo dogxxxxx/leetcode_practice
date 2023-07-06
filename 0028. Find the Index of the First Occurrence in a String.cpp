@@ -1,8 +1,10 @@
+/*
 Method 1:
 Compare characters in haystack to needle.
 
 Time complexity: O(MN)
 Space complexity: O(1)
+*/
 
 class Solution {
 public:

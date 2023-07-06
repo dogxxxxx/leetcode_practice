@@ -1,4 +1,3 @@
-```
 Method 1:
 Compare characters in haystack to needle.
 
@@ -29,4 +28,3 @@ public:
         return result;
     }
 };
-```

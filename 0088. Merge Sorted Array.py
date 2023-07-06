@@ -1,4 +1,4 @@
-```
+"""
 Method 1:
 Recursive algorithm. Compare 2 numbers until nums2 list is all inserted into nums1 list.
 Or nums1 and nums2 can be declared as global before merge function and then there's no need
@@ -6,6 +6,7 @@ to pass nums1 and nums2 into recursive function.
 
 Time complexity: O(m+n)
 Space complexity: O(M+n), M is the length of nums1
+"""
 
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
@@ -28,11 +29,13 @@ class Solution:
             
         recursive(nums1, nums2, m, n)
 
+"""
 Method 2:
 Simpl2 while loop.
 
 Time complexity: O(m+n)
 Space complexity: O(M+n), M is the length of nums1
+"""
 
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
@@ -50,4 +53,3 @@ class Solution:
                 n = n - 1
             else:
                 m = m - 1
-```

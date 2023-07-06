@@ -2,7 +2,7 @@
 Method 1:
 Loop over the nums list from the end. If the element in the list equals to val, erase it.
 
-Time complexity: O(N)
+Time complexity: O(N^2) because TC of erase function is O(N)
 Space complexity: O(1)
 */
 

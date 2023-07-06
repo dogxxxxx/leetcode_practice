@@ -3,7 +3,7 @@ Method 1:
 Iterate the nums and keep previos element.
 If the current element is the same as previous one, erase it.
 
-Time complexity: O(N)
+Time complexity: O(N^2) because TC of erase function is O(N).
 Space complexity: O(1)
 */
 

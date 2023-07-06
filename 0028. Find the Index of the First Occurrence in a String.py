@@ -1,4 +1,3 @@
-```
 Method 1:
 Compare substring in haystack with needle.
 
@@ -11,4 +10,3 @@ class Solution:
             if haystack[i:i+len(needle)] == needle:
                 return i
         return -1
-```

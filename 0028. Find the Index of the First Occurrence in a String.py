@@ -1,8 +1,10 @@
+"""
 Method 1:
 Compare substring in haystack with needle.
 
 Time complexity: O(N)
 Space complexity: O(1)
+"""
 
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:

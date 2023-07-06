@@ -1,20 +1,22 @@
-```
+"""
 Method 1:
 No need to explain...
 
 Time complexity: O(N)
 Space complexity: O(1)
+"""
 
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         return len(s.split()[-1])
 
-
+"""
 Method 2:
 Count the length from behind. This may be faster than method 1.
 
 Time complexity: O(N)
 Space complexity: O(1)
+"""
 
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
@@ -27,4 +29,3 @@ class Solution:
                 if s[i-1] == " ":
                     break
         return length
-```

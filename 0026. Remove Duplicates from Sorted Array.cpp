@@ -24,3 +24,27 @@ public:
         return result;
     }
 };
+
+/*
+Method 2:
+Replace the n^th element in nums with the n^th new integer in the vector.
+
+Time complexity: O(N)
+Space complexity: O(1)
+*/
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int duplicates = 0;
+        for (int i = 0; i < nums.size() - 1; i++){
+            if (nums[i] == nums[i+1]){
+                duplicates++;
+            } else{
+                nums[i - duplicates + 1] = nums[i + 1];
+            }
+        }
+        int result = nums.size() - duplicates;
+        return result;
+    }
+};

@@ -2,7 +2,7 @@
 Method 1:
 Sort the intervals first and then check if the intervals need to be combined.
 
-Time complexity:
+Time complexity: O(N^2)
 Space complexity: O(1)
 """
 

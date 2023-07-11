@@ -1,4 +1,11 @@
+/*
 Method 1:
+Sort the intervals by first element in vector in intervals.
+Then, if 2 intervals intersect, merge them. If not, add the interval into result.
+
+Time complexity: O(nlogn)
+Space complexity: O(N)
+*/
 
 class Solution {
 public:

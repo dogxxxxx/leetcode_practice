@@ -24,16 +24,13 @@ class Solution:
         seen = set()
         target = len(board)
         while dq:
-            print(dq)
             loc, step = dq.popleft()
-            
             for ind in range(loc, loc+6):
                 if ind >= target - 1:
                     return step
                 if board[ind] != -1 and board[ind] not in seen:
                     if board[ind] == target:
                         return step
-                    
                     dq.append((board[ind], step + 1))
                     seen.add(board[ind])
             

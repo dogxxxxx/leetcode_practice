@@ -1,5 +1,9 @@
 """
 Method 1:
+BFS
+
+Time complexity: O(n^2), n = len(board)
+Space complexity: O(n^2)
 """
 
 class Solution:

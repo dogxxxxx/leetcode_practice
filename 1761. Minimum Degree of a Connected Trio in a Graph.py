@@ -12,7 +12,7 @@ class Solution:
         for (a, b) in edges:
             degrees[a - 1] += 1
             degrees[b - 1] += 1
-            e[min(a, b) - 1].add(max(a,b))
+            e[min(a, b) - 1].add(max(a, b))
 
         for i in range(n):
             for c in e[i]:

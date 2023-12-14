@@ -1,3 +1,11 @@
+"""
+Method 1:
+Calculate row difference and column difference first and modify the original grid.
+
+Time complexity: O(NxM)
+Space complexity: O(N+M) for N, M = len(rows), len(columns)
+"""
+
 class Solution:
     def onesMinusZeros(self, grid: List[List[int]]) -> List[List[int]]:
         rows = len(grid)

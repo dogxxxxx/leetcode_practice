@@ -2,8 +2,8 @@
 Method 1:
 Calculate row difference and column difference first and modify the original grid.
 
-Time complexity: O(NxM)
-Space complexity: O(N+M) for N, M = len(rows), len(columns)
+Time complexity: O(N * M)
+Space complexity: O(N + M) for N, M = len(rows), len(columns)
 """
 
 class Solution:

@@ -30,6 +30,9 @@ DP
 
 Time complexity: O(N**2)
 Space complexity: O(N**2)
+
+Future work:
+Use list to store dp instead of dictionary.
 """
 
 class Solution:

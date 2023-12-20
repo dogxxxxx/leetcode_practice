@@ -1,6 +1,5 @@
 from typing import List
 from collections import deque
-# 1. deque 2. get index of 0s
 """
 Method 1:
 Get the indices of zeros. Then loop through nums from the begining.

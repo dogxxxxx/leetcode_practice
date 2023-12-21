@@ -1,4 +1,5 @@
 from typing import List
+from collections import deque
 """
 Method 1:
 Sort the points by second elementsand if the second elements are the same, sort by the first elements.
@@ -11,13 +12,13 @@ Space complexity: O(1)
 
 class Solution:
     def findMinArrowShots(self, points: List[List[int]]) -> int:
-        points = sorted(points, key=lambda x: (x[1], x[0]))
+        points = deque(sorted(points, key=lambda x: (x[1], x[0])))
         result = 0
         while points:
             arrow = points[0][1]
             result += 1
             while points[0][0] <= arrow:
-                points.pop(0)
+                points.popleft()
                 if not points:
                     break
         return result

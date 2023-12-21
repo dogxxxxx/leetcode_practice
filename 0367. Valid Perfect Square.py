@@ -2,7 +2,7 @@
 Method 1:
 Binary Search
 
-Time complexity: O(nlog(n))
+Time complexity: O(log(n))
 Space complexity: O(1)
 """
 

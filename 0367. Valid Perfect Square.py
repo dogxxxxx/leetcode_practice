@@ -1,5 +1,9 @@
 """
 Method 1:
+Binary Search
+
+Time complexity: O(nlog(n))
+Space complexity: O(1)
 """
 
 class Solution:

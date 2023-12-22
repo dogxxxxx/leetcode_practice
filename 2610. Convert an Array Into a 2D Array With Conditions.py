@@ -5,7 +5,7 @@ Store the amount of each number to a dictionary
 Then, convert dict.keys to list and minus 1 to all values.
 Do the previous step until the dictionary is empty
 
-Time complexity: O(N)
+Time complexity: O(N**2), while loop is O(N) and list append is O(N)
 Space complexity: O(N)
 """
 

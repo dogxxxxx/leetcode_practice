@@ -3,7 +3,7 @@ from typing import List
 Method 1:
 Calculate maximum length from the end
 
-Time complexity: O(Nlog(N))
+Time complexity: O(N^2)
 Space complexity: O(N)
 """
 
@@ -20,6 +20,6 @@ class Solution:
     
 
 if __name__ == "__main__":
-    nums = [10,9,2,5,3,7,101,18]
+    nums = [4,10,4,3,8,9]
     result = Solution().lengthOfLIS(nums)
     print(result)

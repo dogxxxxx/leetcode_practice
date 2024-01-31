@@ -27,7 +27,7 @@ class Solution:
             else:
                 res = self.calculate(tokens[i - 2], tokens[i - 1], tokens[i])
                 tokens[i] = res
-                del tokens[i-2:i]
+                del tokens[i - 2:i]
                 i -= 1
         return int(tokens[0])
 

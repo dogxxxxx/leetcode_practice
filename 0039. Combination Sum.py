@@ -35,8 +35,6 @@ class Solution:
             if current_sum > target:
                 return
             for i in range(len(candidates)):
-                # current_arr.append(candidates[i])
-                # dfs(candidates[i:], current_arr, current_sum + candidates[i])
                 dfs(candidates[i:], current_arr + [candidates[i]], current_sum + candidates[i])
         dfs(candidates, [], 0)
         return result

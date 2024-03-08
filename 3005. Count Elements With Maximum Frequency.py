@@ -24,6 +24,32 @@ class Solution:
 
         return cnt * max_freq
     
+"""
+Method 2:
+When updating dictionary, determine if it is
+the max freqency at the same time.
+
+Time complexity: O(N)
+Space complexity: O(N)
+"""
+
+class Solution:
+    def maxFrequencyElements(self, nums: List[int]) -> int:
+        dic = dict()
+        max_freq = 0
+        cnt = 0
+        for num in nums:
+            if num not in dic:
+                dic[num] = 1
+            else:
+                dic[num] += 1
+            if dic[num] > max_freq:
+                max_freq = dic[num]
+                cnt = 1
+            elif dic[num] == max_freq:
+                cnt += 1
+        return max_freq * cnt
+
 
 if __name__ == "__main__":
     nums = [1,2,2,3,1,4]

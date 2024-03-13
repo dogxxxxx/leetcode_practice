@@ -27,25 +27,23 @@ class Solution:
 Method 2:
 Use two pointer.
 
-Time complexity:
-Space complexity:
+Time complexity: O(N)
+Space complexity: O(1)
 """
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        p1 = 0
-        p2 = 0
-        result = 0
-        current_length = 0
-        string = ''
+        p1, p2, result = 0, 0, 0
         while p2 < len(s):
-            if s[p2] not in string:
+            if s[p2] not in s[p1:p2]:
                 p2 += 1
+                result = max(p2 - p1, result)
             else:
                 p1 += 1
-            string = s[p1:p2]
-            current_length = len(string)
-            if current_length > result:
-                result = current_length
-                
         return result
+
+
+if __name__ == "__main__":
+    s = "abcabcbb"
+    result = Solution().lengthOfLongestSubstring(s)
+    print(result)

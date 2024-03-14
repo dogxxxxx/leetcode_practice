@@ -1,3 +1,4 @@
+from typing import List
 """
 Method 1:
 Brute Force
@@ -34,3 +35,32 @@ class Solution:
                 result.append(int(product / num))
 
         return result
+
+"""
+Method 2:
+Iterate through the nums and calculate the product of previous
+numbers and post numbers.
+
+Time complexity: O(N)
+Space complexity: O(1)
+Date: 2024/03/14
+"""
+
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        result = [1] * n
+        prev = 1
+        post = 1
+        for i in range(n):
+            result[i] *= prev
+            prev *= nums[i]
+            result[n - i - 1] *= post
+            post *= nums[n - i - 1]
+        return result
+    
+
+if __name__ == "__main__":
+    nums = [1,2,3,4]
+    result = Solution().productExceptSelf(nums)
+    print(result)

@@ -14,10 +14,9 @@ class Solution:
             if step == "./":
                 continue
             elif step == "../":
-                result -= 1
+                result -= 1 if result > 0 else 0
             else:
                 result += 1
-            result = max(result, 0)
         return result
     
 
